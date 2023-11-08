@@ -8,17 +8,17 @@ from functions import ReverseLayerF
 
 
 class DG_Network(nn.Module):
-    def __init__(self, classes, channels, F1=4, D=2, domains=3):  # , hidden_dim=400
+    def __init__(self, classes, channels, F1=4, D=2, domains=3): 
         super(DG_Network, self).__init__()
         self.dropout = 0.25  # default:0.25
 
-        self.block1_1 = nn.Sequential(  # 1*22*512
+        self.block1_1 = nn.Sequential(  
             nn.ZeroPad2d((3, 4, 0, 0)),
-            nn.Conv2d(1, F1, kernel_size=(1, 8), bias=False),  # 4*22*512
+            nn.Conv2d(1, F1, kernel_size=(1, 8), bias=False),  
             nn.BatchNorm2d(F1)
         )
 
-        self.block1_2 = nn.Sequential(  # 1*22*512
+        self.block1_2 = nn.Sequential(  
             nn.ZeroPad2d((7, 8, 0, 0)),
             nn.Conv2d(1, F1, kernel_size=(1, 16), bias=False),  # 4*22*512
             nn.BatchNorm2d(F1)
