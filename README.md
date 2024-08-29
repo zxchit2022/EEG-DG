@@ -12,7 +12,7 @@ All experiments are conducted with Windows 11 on an Intel Core i7 CPU and an NVI
 
 # Citing
 If you find our work is useful for your research, please consider citing it:
-
+'''
 @article{zhong2024eeg,
   title={EEG-DG: A Multi-Source Domain Generalization Framework for Motor Imagery EEG Classification},
   author={Zhong, Xiao-Cong and Wang, Qisong and Liu, Dan and Chen, Zhihuang and Liao, Jing-Xiao and Sun, Jinwei and Zhang, Yudong and Fan, Feng-Lei},
@@ -20,3 +20,4 @@ If you find our work is useful for your research, please consider citing it:
   year={2024},
   publisher={IEEE}
 }
+'''
